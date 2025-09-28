@@ -1326,6 +1326,7 @@ solver.add(
 并且由于 $pq\bmod n = 0$，则有 $(p+q)^d\equiv p^d + q^d\pmod{n},(p-q)^d\equiv p^d-q^d\pmod{n}$。
 
 则当 $v=\frac{x_0+x_1}{2}$ 时，原方程可化为：
+
 $$
 \begin{align}
 (\frac{x_1-x_0}{2})^d + p^d + q^d + f &\equiv v_0 \pmod{n} \\
@@ -1334,6 +1335,7 @@ $$
 $$
 
 分别相加相减得到：
+
 $$
 \begin{align}
  2p^d + 2f &\equiv v_0+v_1 \pmod{n} \\
@@ -1342,6 +1344,7 @@ $$
 $$
 
 稍作变换：
+
 $$
 \begin{align}
  2p^d &\equiv v_0+v_1-2f \pmod{n} \\
@@ -1350,25 +1353,31 @@ $$
 $$
 
 再将两式相乘得到：
+
 $$
 (v_0+v_1-2f)( v_0-v_1-2(\frac{x_1-x_0}{2})^d)\equiv 4p^dq^d\equiv 0\pmod{n}
 $$
 
 整理移项得到：
+
 $$
 (v_0+v_1-2f)(v_0-v_1)\equiv 2(v_0+v_1-2f)(\frac{x_1-x_0}{2})^d\pmod{n}
 $$
 
 两边同时取 $e$ 次方得到：
+
 $$
 (v_0+v_1-2f)^e(v_0-v_1)^e\equiv 2^e(v_0+v_1-2f)^e(\frac{x_1-x_0}{2})^{ed}\pmod{n}
 $$
 
 再利用 $c^{ed}\equiv c\pmod{n}$，有：
+
 $$
 (v_0+v_1-2f)^e(v_0-v_1)^e\equiv 2^e(v_0+v_1-2f)^e(\frac{x_1-x_0}{2})\pmod{n}
 $$
+
 再整理得：
+
 $$
 (v_0+v_1-2f)^e[(v_0-v_1)^e-2^e(\frac{x_1-x_0}{2})]\equiv 0\pmod{n}
 $$
